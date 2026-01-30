@@ -71,8 +71,8 @@ form button {
 }
 
 /* Adding the skip-links */
-/* To get rid of the dots on the ul because it won't work on the only on the anchor tag */
-.skip-links{
+/* To get rid of the dots on the ul because it won't work only on the anchor tag */
+.skip-links {
   list-style: none;
 }
 
