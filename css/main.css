@@ -69,3 +69,18 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+/* Adding the skip-links */
+
+.skip-links a {
+  position: absolute;
+  background-color: black;
+  color: white;
+  /*   list-style is already none */
+  top: -30rem;
+}
+
+.skip-links a:focus{
+/*  Not top: 0; because it'll be out of the website  */
+  top: 1rem;
+}
