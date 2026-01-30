@@ -39,19 +39,19 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
         <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h2>Address</h2>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
+        <ul itemscope itemtype="https://schema.org/Organization">
+          <li itemprop="legalName">Jambox Studios</li>
+          <li itemprop="address">123 Guitar Road,</li>
+          <li itemprop="location">Musicville, Danceistan</li>
+          <li itemprop="address">B3T 0L0</li>
+        </ul>
       </div>
       <div class="contact-section">
         <h3>Contact Us</h3>
@@ -62,7 +62,7 @@
           <input type="text" id="email-address" placeholder="Email">
           <label for="message-subject">Subject</label>
           <input type="text" id="message-subject" placeholder="Subject">
-          <b label="personal-message">Your Message</b>
+          <b id="personal-message">Your Message</b>
           <textarea aria-labelledby="personal-message"></textarea>
           <button type="submit">Send</button>
         </form>
