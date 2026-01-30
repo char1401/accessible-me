@@ -31,6 +31,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </div>
+      <!-- Changes the image because it wasn't working, and added the alt -->
       <img src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" class="banner" alt="Orange Kitten under pink blanket">
     </header>
     <div class="main-content">
@@ -39,6 +40,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
         <h1>Meet the owner</h1>
+        <!-- Starts adding the schema information from here -->
         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="name">Name: John Doe</li>
           <li itemprop="jobTitle">Title: CEO</li>
@@ -62,6 +64,7 @@
           <input type="text" id="email-address" placeholder="Email">
           <label for="message-subject">Subject</label>
           <input type="text" id="message-subject" placeholder="Subject">
+          <!-- This was a nightmare to firgure out but I did it!! -->
           <b id="personal-message">Your Message</b>
           <textarea aria-labelledby="personal-message"></textarea>
           <button type="submit">Send</button>
@@ -73,5 +76,4 @@
     </div>
   </div>
 </body>
-
 </html>
